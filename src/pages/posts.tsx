@@ -38,7 +38,7 @@ export async function loader() {
             throw new Error('Network response was not ok');
         }
         const posts: Post[] = await res.json();
-        await new Promise((resolve) => setTimeout(resolve, 3_000))
+        
         return { posts };
     } catch (err) {
         console.error(err);

@@ -4,8 +4,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "pnpm dlx serve dist",
+    "dev": "parcel serve",
     "prebuild": "rm -rf .parcel-cache dist",
-    "build": "parcel build",
+    "build": "parcel build --no-optimize --no-content-hash",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

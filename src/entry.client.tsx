@@ -9,7 +9,6 @@ import {
 } from "react-router";
 import { routes } from "./routes";
 import * as appRoot from "./root";
-import { env } from "node:process";
 
 const resolveErrorBoundaries = (routes: RouteObject[] = []) =>
   routes.map(({ ErrorBoundary, children, ...route }) => ({
@@ -29,7 +28,7 @@ const resolveErrorBoundaries = (routes: RouteObject[] = []) =>
 
 const appRoutes: RouteObject[] = [
   {
-    path: "*",
+    path: "/",
     element: <appRoot.default />,
     ErrorBoundary: appRoot.ErrorBoundary,
     children: [
@@ -44,7 +43,7 @@ const appRoutes: RouteObject[] = [
   },
 ];
 
-const createRouter = env.NODE_ENV === "production" ? createHashRouter : createBrowserRouter;
+const createRouter = process.env.NODE_ENV === "production" ? createHashRouter : createBrowserRouter;
 const router = createRouter(resolveErrorBoundaries(appRoutes));
 
 const root = document.getElementById("root");
