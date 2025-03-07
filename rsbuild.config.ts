@@ -27,11 +27,11 @@ export default defineConfig(() => {
     },
     output: {
       assetPrefix: `/${env?.GITHUB_REPOSITORY?.split("/")?.[1] || ""}`,
-    manifest: true,
-    sourceMap: {
-      css: !isProduction,
+      manifest: true,
+      sourceMap: {
+        css: !isProduction,
+      },
     },
-  },
     html: {
       template: relative(__dirname, "src/index.html"),
       title: APP_NAME,
