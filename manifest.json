@@ -1,0 +1,32 @@
+{
+  "allFiles": [
+    "944379271/static/js/index.8f4cdb21.js",
+    "944379271/static/css/async/761.95175be9.css",
+    "944379271/static/js/async/761.4b613c2e.js",
+    "944379271/static/js/lib-react.98901204.js",
+    "944379271/static/js/lib-router.885811fa.js",
+    "944379271/index.html"
+  ],
+  "entries": {
+    "index": {
+      "html": [
+        "944379271/index.html"
+      ],
+      "initial": {
+        "js": [
+          "944379271/static/js/lib-router.885811fa.js",
+          "944379271/static/js/lib-react.98901204.js",
+          "944379271/static/js/index.8f4cdb21.js"
+        ]
+      },
+      "async": {
+        "js": [
+          "944379271/static/js/async/761.4b613c2e.js"
+        ],
+        "css": [
+          "944379271/static/css/async/761.95175be9.css"
+        ]
+      }
+    }
+  }
+}
