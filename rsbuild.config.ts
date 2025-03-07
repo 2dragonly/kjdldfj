@@ -27,7 +27,7 @@ export default defineConfig(() => {
     },
     output: {
       assetPrefix:
-        env?.GITHUB_REPOSITORY_ID || '/',
+        env?.GITHUB_REPOSITORY?.split("/")?.[1] || '/',
     manifest: true,
     sourceMap: {
       css: !isProduction,
