@@ -5,8 +5,7 @@
   "scripts": {
     "start": "pnpm dlx serve dist",
     "dev": "parcel serve",
-    "prebuild": "rm -rf .parcel-cache dist",
-    "build": "parcel build --no-optimize --no-content-hash",
+    "build": "parcel build",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
