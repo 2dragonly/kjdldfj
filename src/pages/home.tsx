@@ -4,8 +4,8 @@ export const Home = () => {
     return (
         <main>
             REACT ROUTER v7
-            <Link to="/blog">Blogs</Link>
-            <Link to="/about">About</Link>
+            <Link to="/posts">posts</Link>
+            <Link to="/lorem">lorem</Link>
         </main>
     );
 };
