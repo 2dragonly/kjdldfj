@@ -31,7 +31,7 @@ jobs:
           pnpm install
       - name: Run build
         run: |
-          pnpm run build --public-url /${{ github.event.repository.name }}
+          pnpm run build --no-source-maps --public-url /${{ github.event.repository.name }}
       - name: Deploy with gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
